@@ -1,0 +1,26 @@
+/* font jost */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+:root {
+  --white: #f1f1f1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0 auto;
+  width: 60vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+}
+
+.home {
+  background: linear-gradient(287.56deg, #000000 0%, #434343 100%);
+  min-width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
