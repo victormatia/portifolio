@@ -20,7 +20,7 @@ main {
   position: relative;
 }
 
-.home {
+.home-background {
   background: linear-gradient(287.56deg, #000000 0%, #434343 100%);
   min-width: 100vw;
   height: 100vh;

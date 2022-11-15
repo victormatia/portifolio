@@ -5,7 +5,7 @@ import './css/index.css'
 function App() {
   return (
     <>
-      <section className='home'>
+      <section className='home-background'>
         <main>
           <Header />
           <div>Este será o meu portifólio</div>
