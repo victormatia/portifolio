@@ -1,0 +1,43 @@
+.header-switch-label {
+  font-size: 18px;
+  color: var(--white);
+}
+
+.header-switch-background {
+  position: relative;
+  margin: 0 10px;
+  width: 36px;
+  height: 18px;
+  background: #3D3D3D;
+  border-radius: 100px;
+  padding: 2px;
+}
+
+.header-switch {
+  position: absolute;
+  border-radius:100%;
+  width: 14px;
+  height: 14px;
+}
+
+.header-switch-background:hover {
+  cursor: pointer;
+}
+
+.ON{
+  font-weight: 600;
+}
+
+.OFF{
+  font-weight: 400;
+}
+
+.PT {
+  background: linear-gradient(114.27deg, #13CF53 -40.92%, #F5E177 91.26%);
+  left: 2px;
+}
+
+.EN {
+  background: linear-gradient(114.27deg, var(--blue) -40.92%, var(--red) 91.26%);
+  right: 2px;
+}
