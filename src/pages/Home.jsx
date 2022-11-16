@@ -8,9 +8,11 @@ function Home() {
     <section className='home'>
       <section className='home-left-side'>
         <p className='home-title'><span>Olá</span> pessoas!</p>
-        <p className='home-paragraph'>Eu sou Victor Matias, mas pode me chamar de Vitu. <br/>
-        Sejam bem-vindos ao meu portifólio</p>
-        <img className='home-underlines' src={ underlines } alt="underlines" />
+        <section className='home-paragraph-section'>
+          <p className='home-paragraph'>Eu sou Victor Matias,<br /> mas pode me chamar de Vitu. <br/>
+          Sejam bem-vindos ao meu portifólio</p>
+          <img className='home-underlines' src={ underlines } alt="underlines" />
+        </section>
       </section>
 
       <section className='home-right-side'>
