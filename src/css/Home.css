@@ -2,6 +2,7 @@
   display: flex;
   height: 96vh;
   color: var(--white);
+  position: relative;
 }
 
 .home-left-side, .home-right-side {
@@ -50,3 +51,16 @@
   width: 600px;
 }
 
+.arrow {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  rotate: -90deg;
+  width: 20px;
+  animation: motion-arrow 1s infinite alternate;
+}
+
+@keyframes motion-arrow {
+  from { bottom: 20px; }
+  to { bottom: 0; }
+}
