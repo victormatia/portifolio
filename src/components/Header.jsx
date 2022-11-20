@@ -5,11 +5,11 @@ import Switch from '../components/Switch';
 
 function Header() {
   return (
-    <header className='header FLEX__ROW__SPACE-EVENLY__CENTER'>
-      <section className='header-left-side FLEX__ROW__SPACE-EVENLY__CENTER'>
+    <header className='header FLEX__ROW__SPACE-BETWEEN__CENTER'>
+      <section className='header-left-side FLEX__ROW__SPACE-BETWEEN__CENTER'>
         <img className='header-logo' src={ logo } alt="VITU logo" />
         <ul className='header-nav'>
-          <li className='header-nav-link'><a href="">sobre</a></li>
+          <li className='header-nav-link'><a href="#about">sobre</a></li>
           <li className='header-nav-link'><a href="">projetos</a></li>
           <li className='header-nav-link'><a href="">contato</a></li>
         </ul>
