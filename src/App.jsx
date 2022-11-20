@@ -7,8 +7,8 @@ import Home from './pages/Home'
 function App() {
   return (
     <main>
+      <Header />
       <section className='home-background'>
-        <Header />
         <Home />
       </section>
       <section className='about-background'>
