@@ -15,31 +15,16 @@
 }
 
 main {
-  margin: 0 auto;
-  width: 60%;
   font-family: 'Jost*', sans-serif;                  
   position: relative;
 }
 
-.home-background {
-  background: linear-gradient(287.56deg,#000000 0%, #2e2e2e 100%);
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background-size: 300% 300%;
-  animation: colors 15s infinite alternate;
-}
 
-/* #20202e azul escuro  */
-
-@keyframes colors {
-  0% {
-    background-position-x: 0%;
-    background-position-y: 100%;
-  }
-
-  100% {
-    background-position: 100%;
-    background-position-y: 0%;
-  }
+ /* classe de alinhamento */
+ 
+.FLEX__ROW__SPACE-BETWEEN__CENTER {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
