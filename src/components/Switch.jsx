@@ -7,7 +7,7 @@ function Switch() {
   );
 
   return (
-    <section className='header-rigth-side FLEX__ROW__SPACE-EVENLY__CENTER'>
+    <section className='header-rigth-side FLEX__ROW__SPACE-BETWEEN__CENTER'>
       <p className={`header-switch-label ${language.pt}`}>PT-BR</p>
         <div
           className='header-switch-background'
