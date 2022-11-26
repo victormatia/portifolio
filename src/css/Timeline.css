@@ -1,0 +1,27 @@
+.timeline {
+  width: 1000px;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+}
+
+.timeline-point {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.title-context-sec {
+  flex-basis: 80%;
+  margin-right: 30px;
+}
+
+.point-date {
+  flex-basis: 10%;
+}
+
+.bulletpoint {
+  width: 10px;
+  height: 10px;
+  background-color: var(--blue);
+  border-radius: 100%;
+}
