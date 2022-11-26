@@ -1,10 +1,12 @@
 import React from 'react';
-import hero from '../images/hero.png'
+import Timeline from '../components/Timeline';
+import '../css/About.css';
 
 function About() {
   return (
-    <section id='about'>
-       About
+    <section id='about' className='about'>
+       <h1>Sobre mim</h1>
+       <Timeline />
     </section>
   )
 }
