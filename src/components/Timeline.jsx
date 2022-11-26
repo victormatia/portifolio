@@ -46,7 +46,7 @@ function Timeline() {
       { 
         DATA.map(({ id, title, context, date }) => (
             <div key={ id } className="timeline-point FLEX__ROW__SPACE-BETWEEN__CENTER">
-              <div className="title-context-sec">
+              <div className="title-context-section">
                 <h3 className="point-title">{ title }</h3>
                 <p className="point-context">{ context }</p>
               </div>
