@@ -1,7 +1,6 @@
 /* font jost */
 @import url('https://fonts.cdnfonts.com/css/jost');
                 
-
 :root {
   --white: #f1f1f1;
   --red: #E2525C;
@@ -17,8 +16,8 @@
 main {
   font-family: 'Jost*', sans-serif;                  
   position: relative;
+  color: var(--white);
 }
-
 
  /* classe de alinhamento */
  
