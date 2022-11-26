@@ -8,7 +8,7 @@ function Home() {
   return (
     <section className='home'>
       <section className='home-left-side'>
-        <p className='home-title'><span>Olá</span> pessoas!</p>
+        <h1 className='home-title'><span>Olá</span> pessoas!</h1>
         <section className='home-paragraph-section'>
           <p className='home-paragraph'>Eu sou Victor Matias,<br /> mas pode me chamar de Vitu. <br/>
           Sejam bem-vindos ao meu portifólio</p>
