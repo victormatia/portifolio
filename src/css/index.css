@@ -19,6 +19,10 @@ main {
   color: var(--white);
 }
 
+*::-webkit-scrollbar { /*modificado*/
+  display: none;
+}
+
  /* classe de alinhamento */
  
 .FLEX__ROW__SPACE-BETWEEN__CENTER {
