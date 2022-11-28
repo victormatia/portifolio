@@ -1,5 +1,6 @@
 .header-switch-label {
   font-size: 18px;
+  font-weight: 600; /*modificado*/
   color: var(--white);
 }
 
@@ -25,11 +26,13 @@
 }
 
 .ON{
-  font-weight: 600;
+  /* font-weight: 600; */
+  opacity: 1; /*modificado*/
 }
 
 .OFF{
-  font-weight: 400;
+  /* font-weight: 400; */
+  opacity: 0.5; /*modificado*/
 }
 
 .PT {
