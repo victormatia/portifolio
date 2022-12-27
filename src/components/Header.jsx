@@ -10,7 +10,7 @@ function Header() {
         <img className='header-logo' src={ logo } alt="VITU logo" />
         <ul className='header-nav'>
           <li className='header-nav-link'><a href="#about">sobre</a></li>
-          <li className='header-nav-link'><a href="">projetos</a></li>
+          <li className='header-nav-link'><a href="#projects">projetos</a></li>
           <li className='header-nav-link'><a href="">contato</a></li>
         </ul>
       </section>
