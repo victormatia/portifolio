@@ -1,0 +1,7 @@
+.projects-background {
+  position: absolute;
+  top: 200vh;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(72.44deg, #DEDEDE 0%, rgba(243, 243, 243, 0.99) 100%);
+}
