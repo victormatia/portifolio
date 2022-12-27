@@ -3,6 +3,7 @@ import Header from './components/Header'
 import './css/index.css'
 import About from './pages/About'
 import Home from './pages/Home'
+import Projects from './pages/Projects'
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       </section>
       <section className='about-background'>
         <About />
+      </section>
+      <section className='projects-background'>
+        <Projects />
       </section>
     </main>
   )
