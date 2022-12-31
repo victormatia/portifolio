@@ -1,0 +1,44 @@
+.card {
+  background-color: white;
+  border-radius: 5px;
+  width: 348px;
+  height: 364px;
+  box-shadow: 2px 4px 4px rgba(162, 162, 162, 0.25);
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-title {
+  margin: 0 0 10px 20px;
+}
+
+.card-links-section {
+  margin: 0 auto;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-repo-link, .card-deploy-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--white);
+  width: 148px;
+  height: 40px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card-icons {
+  height: 38px;
+}
+
+/* Refatorar alinhamento dos links */
