@@ -17,14 +17,22 @@ const mockProjects = [
     name: 'BlogsApi',
     repo: 'https://github.com/victormatia/recipes-app',
     link: 'https://recipes-hdxwcw7ku-victormatia.vercel.app/',
-  }
+  },
+  {
+    name: 'Trybe Tunes',
+    repo: 'https://github.com/victormatia/recipes-app',
+    link: 'https://recipes-hdxwcw7ku-victormatia.vercel.app/',
+  },
 ];
 
 function Projects () {
   return (
     <section id="projects" className="projects">
-      <h1>Projects</h1>
-      <ul>
+      <section className="projects-title-section">
+        <h1 className="projects-title">Projects</h1>
+        <div className="projects-title-pipe"/>
+      </section>
+      <ul className="project-list">
         { mockProjects.map(({ name, repo, link }, i) => (
           <Card projectInfos={{ name, repo, link }}  key={ i }/>
         )) }
