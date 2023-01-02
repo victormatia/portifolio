@@ -1,9 +1,10 @@
 .card {
   background-color: white;
   border-radius: 5px;
-  width: 348px;
-  height: 364px;
+  width: 270px;
+  height: 292px;
   box-shadow: 2px 4px 4px rgba(162, 162, 162, 0.25);
+  margin: 8px;
 }
 
 .card-image {
@@ -26,19 +27,23 @@
 .card-repo-link, .card-deploy-link {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   color: var(--white);
-  width: 148px;
-  height: 40px;
+  width: 120px;
+  height: 30px;
   background-color: black;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 1px;
   text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
 }
 
-.card-icons {
-  height: 38px;
+.card-github-icon {
+  height: 28px;
 }
 
-/* Refatorar alinhamento dos links */
+.card-deploy-icon {
+  height: 20px;
+  margin: 4px;
+}
