@@ -1,0 +1,40 @@
+.navbar {
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  bottom: 60px;
+  left: 20%;
+}
+
+.navbar-background-icon {
+  background: linear-gradient(131.19deg, #1F8FE0 5.83%, #E2525C 100%);
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-icon {
+  width: 40px;
+}
+
+.navbar-link-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  height: 50px;
+  width: 280px;
+  margin-left: 10px;
+  border-radius: 100px 100px 100px 5px; /*Ainda não sei se vai ficar com essa borda diferente*/
+  background-color: var(--white);
+}
+
+.navbar-link {
+  color: #C4C4C4;
+  font-weight: 600;
+  font-size: 18px;
+}
