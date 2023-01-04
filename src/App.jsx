@@ -1,14 +1,16 @@
 import React from 'react'
 import Header from './components/Header'
-import './css/index.css'
+import Navbar from './components/Navbar'
 import About from './pages/About'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
+import './css/index.css'
 
 function App() {
   return (
     <main>
       <Header />
+      <Navbar />
       <section id='home' className='home-background'>
         <Home />
       </section>
