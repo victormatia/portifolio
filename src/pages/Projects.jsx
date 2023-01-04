@@ -27,7 +27,7 @@ const mockProjects = [
 
 function Projects () {
   return (
-    <section id="projects" className="projects">
+    <section className="projects">
       <section className="projects-title-section">
         <h1 className="projects-title">Projects</h1>
         <div className="projects-title-pipe"/>

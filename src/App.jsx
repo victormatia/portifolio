@@ -9,17 +9,19 @@ function App() {
   return (
     <main>
       <Header />
-      <section className='home-background'>
+      <section id='home' className='home-background'>
         <Home />
       </section>
-      <section className='about-background'>
+      <section id='about' className='about-background'>
         <About />
       </section>
-      <section className='projects-background'>
+      <section id='projects' className='projects-background'>
         <Projects />
       </section>
     </main>
   )
 }
+
+// o id para a navegação é melhor posicionado na section de background de cada página
 
 export default App
