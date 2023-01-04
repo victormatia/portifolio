@@ -26,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 2px 4px 4px rgba(72, 72, 72, 0.25);
 }
 
 .navbar-icon {
@@ -49,6 +50,7 @@
   margin-left: 10px;
   border-radius: 100px 100px 100px 5px; /*Ainda não sei se vai ficar com essa borda diferente*/
   background-color: var(--white);
+  box-shadow: 2px 4px 4px rgba(72, 72, 72, 0.25);
 }
 
 .navbar-link {
