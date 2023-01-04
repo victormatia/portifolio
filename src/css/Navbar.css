@@ -19,7 +19,14 @@
 
 .navbar-icon {
   width: 40px;
+  transition: 0.5s;
 }
+
+.navbar-icon:hover {
+  rotate: 90deg;
+}
+
+
 
 .navbar-link-list {
   display: flex;
@@ -34,7 +41,14 @@
 }
 
 .navbar-link {
-  color: #C4C4C4;
+  color: #373737;
+  opacity: 0.4;
   font-weight: 600;
   font-size: 18px;
+  text-decoration: none;
+}
+
+
+.navbar-link:hover {
+  opacity: 1;
 }
