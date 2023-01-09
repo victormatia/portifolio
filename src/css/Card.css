@@ -5,6 +5,12 @@
   height: 292px;
   box-shadow: 2px 4px 4px rgba(162, 162, 162, 0.25);
   margin: 8px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  scale: 1.1;
+  filter: drop-shadow(1px 1px 1px var(--blue));
 }
 
 .card-image {
