@@ -10,7 +10,7 @@ function Navbar() {
       <li><a className='navbar-link' href="#home">home</a></li>
       <li><a className='navbar-link' href="#about">sobre</a></li>
       <li><a className='navbar-link' href="#projects">projetos</a></li>
-      <li><a className='navbar-link' href="#">contato</a></li>
+      <li><a className='navbar-link' href="#contact">contato</a></li>
       </ul>
     </nav>
   )
