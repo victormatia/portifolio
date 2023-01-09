@@ -31,10 +31,13 @@
 }
 
 .project-list {
+  position: absolute;
+  top: calc(50% - 146px);
+  left: calc(50% - 750px);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 150px auto 0 auto;
+  width: 120%;
+  max-width: 1500px;
   list-style: none;
 }
