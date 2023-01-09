@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import './css/index.css'
 import { useRef, useEffect, useState } from 'react'
+import Contact from './pages/Contact'
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -43,6 +44,9 @@ function App() {
       </section>
       <section id='projects' className='projects-background'>
         <Projects />
+      </section>
+      <section id='contact' className='contact-background'>
+        <Contact />
       </section>
     </main>
   )
