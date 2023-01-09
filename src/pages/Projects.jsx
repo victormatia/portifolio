@@ -29,7 +29,7 @@ function Projects () {
   return (
     <section className="projects">
       <section className="projects-title-section">
-        <h1 className="projects-title">Projects</h1>
+        <h1 className="projects-title">Projetos</h1>
         <div className="projects-title-pipe"/>
       </section>
       <ul className="project-list">
