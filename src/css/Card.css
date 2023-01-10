@@ -43,10 +43,15 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
+  transition: 1s;
+}
+
+.card-repo-link:hover, .card-deploy-link:hover {
+  background: linear-gradient(131.19deg, #1F8FE0 5.83%, #E2525C 100%);
 }
 
 .card-github-icon {
-  height: 28px;
+  height: 28px
 }
 
 .card-deploy-icon {
