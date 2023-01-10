@@ -26,7 +26,7 @@ export const projects = [
 ];
 
 export const aboutMe = {
-  about: 'Um pouco mais sobre mim. Tenho 24 anos e sou Cearense. Há um tempo descobri minha paixão pelo desenvolvimento de software, e em 20 de abril de 2022 decidi entrar de cabeça nesse mundo e me tornar um dev. Atualmente sou um profissional front end certificado, porém sigo me especializando, e venho estudando tecnologías back end para assim me tornar um desenvolvedor full stack. Dito isso, separei alguns momentos importantes da minha carreira na linha do tempo a seguir:',
+  about: 'Um pouco mais sobre mim. Tenho 24 anos e sou Cearense. Há um tempo, descobri minha paixão pelo desenvolvimento de software e, em 20 de abril de 2022, decidi entrar de cabeça nesse mundo e me tornar um dev. Atualmente, sou um profissional front end certificado, porém, sigo me especializando, e venho estudando tecnologias back end para assim me tornar um desenvolvedor full stack. Dito isso, separei alguns momentos importantes da minha carreira na linha do tempo a seguir:',
   timeLinePoints: [
     {
       id: 1,
