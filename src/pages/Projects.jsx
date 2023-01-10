@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
-import mockProjects from "../mock/mockApi";
+import { projects } from "../mock/mockApi";
 import '../css/Projects.css';
 
 function Projects () {
@@ -11,7 +11,7 @@ function Projects () {
         <div className="projects-title-pipe"/>
       </section>
       <ul className="project-list">
-        { mockProjects.map(({ name, tag, repo, link }, i) => (
+        { projects.map(({ name, tag, repo, link }, i) => (
           <Card projectInfos={{ name, tag, repo, link }}  key={ i }/>
         )) }
       </ul>
