@@ -36,7 +36,7 @@ export const aboutMe = {
     },
     {
       id: 2,
-      title: 'Descidi me dedicar totalmente aos estudos de programação',
+      title: 'Decidi me dedicar totalmente aos estudos de programação',
       context: 'Optei por fazer transição de carreira  e iniciei o curso de desenvolvimento web na Trybe para me tornar um profissional Full Stack',
       date: '2022/04',
     },
