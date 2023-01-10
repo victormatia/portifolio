@@ -1,29 +1,7 @@
 import React from "react";
 import Card from "../components/Card";
+import mockProjects from "../mock/mockApi";
 import '../css/Projects.css';
-
-const mockProjects = [
-  {
-    name: 'Recipes',
-    repo: 'https://github.com/victormatia/recipes-app',
-    link: 'https://recipes-hdxwcw7ku-victormatia.vercel.app/',
-  },
-  {
-    name: 'Wallet',
-    repo: 'https://github.com/victormatia/recipes-app',
-    link: 'https://recipes-hdxwcw7ku-victormatia.vercel.app/',
-  },
-  {
-    name: 'BlogsApi',
-    repo: 'https://github.com/victormatia/recipes-app',
-    link: 'https://recipes-hdxwcw7ku-victormatia.vercel.app/',
-  },
-  {
-    name: 'Trybe Tunes',
-    repo: 'https://github.com/victormatia/recipes-app',
-    link: 'https://recipes-hdxwcw7ku-victormatia.vercel.app/',
-  },
-];
 
 function Projects () {
   return (
@@ -33,8 +11,8 @@ function Projects () {
         <div className="projects-title-pipe"/>
       </section>
       <ul className="project-list">
-        { mockProjects.map(({ name, repo, link }, i) => (
-          <Card projectInfos={{ name, repo, link }}  key={ i }/>
+        { mockProjects.map(({ name, tag, repo, link }, i) => (
+          <Card projectInfos={{ name, tag, repo, link }}  key={ i }/>
         )) }
       </ul>
     </section>
