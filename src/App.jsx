@@ -4,13 +4,19 @@ import Navbar from './components/Navbar'
 import About from './pages/About'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
-import './css/index.css'
 import { useRef, useEffect, useState } from 'react'
 import Contact from './pages/Contact'
+import { useContext } from 'react'
+import globalContext from './context/globalContext'
+import './css/index.css'
 
 function App() {
   const [showNav, setShowNav] = useState(false);
-  const containerRef = useRef(null);
+  const { setCurrentPage } = useContext(globalContext);
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
 
   const options = {
     root:  null,
@@ -18,34 +24,51 @@ function App() {
     threshold: 0.95,
   };
   
-  const callback = (entries) => {
+  const controlNavBar = (entries) => {
     const [entrie] = entries;
     const isVisible = entrie.isIntersecting;
 
+    setCurrentPage(entrie.target.id);
     setShowNav(!isVisible)
+  }
 
+  const updateCurrentPage = (entries) => {
+    const [entrie] = entries;
+    const { target: { id } } = entrie;
+
+    const isVisible = entrie.isIntersecting;
+
+    if (isVisible) setCurrentPage(id);
   }
   
-  const observer = new IntersectionObserver(callback, options);
+  // Lembrete: Pesquisar se existe uma maneira mais eficiente de fazer isso.
+  const home = new IntersectionObserver(controlNavBar, options);
+  const about = new IntersectionObserver(updateCurrentPage, options);
+  const projects = new IntersectionObserver(updateCurrentPage, options);
+  const contact = new IntersectionObserver(updateCurrentPage, options);
 
   useEffect(() => {
-    observer.observe(containerRef.current);
-  }, [containerRef])
+    home.observe(homeRef.current);
+    about.observe(aboutRef.current);
+    projects.observe(projectsRef.current);
+    contact.observe(contactRef.current);
+
+  }, [homeRef, aboutRef, projectsRef, contactRef]);
 
   return (
     <main>
       <Header />
       { showNav && <Navbar /> }
-      <section ref={ containerRef } id='home' className='home-background'>
+      <section ref={ homeRef } id='home' className='home-background'>
         <Home />
       </section>
-      <section id='about' className='about-background'>
+      <section ref={ aboutRef } id='about' className='about-background'>
         <About />
       </section>
-      <section id='projects' className='projects-background'>
+      <section ref={ projectsRef } id='projects' className='projects-background'>
         <Projects />
       </section>
-      <section id='contact' className='contact-background'>
+      <section ref={ contactRef } id='contact' className='contact-background'>
         <Contact />
       </section>
     </main>
