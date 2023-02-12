@@ -3,10 +3,10 @@ import "../css/Card.css";
 import githubIcon from "../images/github-icon.png";
 import deployIcon from "../images/deploy-icon.png";
 
-function Card({ projectInfos: { name, tag, repo, link } }) {
+function Card({ projectInfos: { name, tag, thumb, repo, link } }) {
   return (
     <li className='card'>
-      <img className='card-image' src="https://cdn.dribbble.com/userupload/4160565/file/original-f6d2c9b9fc324e41bbca071ed29a036a.png?compress=1&resize=752x564" alt="miniatura do projeto" />
+      <img className='card-image' src={ thumb } alt="miniatura do projeto" />
       <h4 className='card-title' style={ { color: "black" } }>{ name }</h4>
       <p className='card-tag'>{ tag }</p>
       <section className='card-links-section'>
