@@ -11,8 +11,8 @@ function Projects () {
         <div className="projects-title-pipe"/>
       </section>
       <ul className="project-list">
-        { projects.map(({ name, tag, repo, link }, i) => (
-          <Card projectInfos={{ name, tag, repo, link }}  key={ i }/>
+        { projects.map(({ name, tag, thumb, repo, link }, i) => (
+          <Card projectInfos={{ name, tag, thumb, repo, link }}  key={ i }/>
         )) }
       </ul>
     </section>
