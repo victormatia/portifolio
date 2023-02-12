@@ -1,25 +1,34 @@
+import repicesThumb from './thumbs/recipes-thumb.png';
+import ualletThumb from './thumbs/uallet-thumb.png';
+import tunesThumb from './thumbs/tunes-thumb.png';
+import blogsThumb from './thumbs/blogs-thumb.png';
+
 export const projects = [
   {
     name: 'Recipes',
     tag: 'FrontEnd',
+    thumb: repicesThumb,
     repo: 'https://github.com/victormatia/recipes-app',
     link: 'https://recipes-hdxwcw7ku-victormatia.vercel.app/',
   },
   {
     name: 'Wallet',
     tag: 'FrontEnd',
+    thumb: ualletThumb,
     repo: 'https://github.com/victormatia/wallet-redux',
     link: 'https://wallet-redux-bh14u6cvy-victormatia.vercel.app/',
   },
   {
     name: 'BlogsApi',
     tag: 'BackEnd',
+    thumb: blogsThumb,
     repo: 'https://github.com/victormatia/blogs-api',
     link: '',
   },
   {
     name: 'Trybe Tunes',
     tag: 'Em breve',
+    thumb: tunesThumb,
     repo: '',
     link: '',
   },
@@ -52,6 +61,12 @@ export const aboutMe = {
       context: 'Finalizei o segundo módulo da Trybe, ganhei a certificação e agora posso atuar no mercado como desenvolvedor front end',
       date: '2022/10',
     },
+    // {
+    //   id: 4,
+    //   title: 'Me tornei um profissional Front End!',
+    //   context: 'Finalizei o segundo módulo da Trybe, ganhei a certificação e agora posso atuar no mercado como desenvolvedor front end',
+    //   date: '2022/10',
+    // },
   ],
 }
 
