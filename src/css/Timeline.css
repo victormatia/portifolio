@@ -1,7 +1,5 @@
 .timeline {
   position: relative;
-  width: 1267px;
-  max-height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,58 +10,46 @@
 .timeline-div {
   z-index: 0;
   position: absolute;
-  left: 50%;
-  height: calc(100% + 20px);
+  right: 15px;
+  height: 100%;
   width: 1px;
   background-color: rgb(86, 86, 86);
 }
 
-.timeline-point-left, .timeline-point-right {
+.timeline-point {
+  width: 100%;
   z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: calc(50% + 128px);
-  padding: 20px 20px;
+  justify-content: space-between;
+  text-align: right;
+  padding: 20px 10px;
   border-radius: 10px;
   transition: 0.4s;
+  border: solid 1px rgb(86, 86, 86);
 }
 
-.timeline-point-left:hover, .timeline-point-right:hover {
- background-color: #313131;
- box-shadow: inset 41px 41px 82px #2a2a2a, inset -41px -41px 82px #383838;
+.timeline-point:hover {
+  background-color: #313131;
+  box-shadow: inset 41px 41px 82px #2a2a2a, inset -41px -41px 82px #383838;
   scale: 1.05;
-}
-
-.timeline-point-left {
-  /* Alinhamento relacionado ao pai */
-  align-self: flex-end;
-
-  /* Alinhamento dos descendentes */
-  text-align: left;
-}
-
-.timeline-point-right {
-  /* Alinhamento relacionado ao pai */
-  align-self: flex-start;
-
-  /* Alinhamento dos descendentes */
-  text-align: right;
-}
-
-.title-context-section {
-  flex-basis: 80%;
-}
-
-.date-section {
-  flex-basis: 10%;
-}
+  border: none;
+ }
+ 
+ .title-context-section {
+   flex-basis: 90%;
+ }
+ 
+ .date-section {
+   flex-basis: 5%;
+ }
 
 .bulletpoint-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 10%;
+  flex-basis: 5%;
 }
 
 .bulletpoint {
@@ -71,5 +57,5 @@
   height: 12px;
   background-color: var(--blue);
   border-radius: 100%;
-  margin: 10px;
+  /* margin: 10px; */
 }
