@@ -63,7 +63,7 @@ export const aboutMe = {
     },
     {
       id: 5,
-      title: '🚀 | Conseguir meu primeiro estágio em tecnologia!',
+      title: '🚀 | Consegui meu primeiro estágio em tecnologia!',
       context: 'Passei no processo seletivo da Trybe para estagiar como Student Summer Job de instrução',
       date: '2023/01',
     },
