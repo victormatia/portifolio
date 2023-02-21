@@ -1,18 +1,17 @@
 .projects-background {
-  position: absolute;
-  top: 200vh;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(72.44deg, #DEDEDE 0%, rgba(243, 243, 243, 0.99) 100%);
+  position: relative;
 }
 
 .projects {
   width: 60%;
   margin: 0 auto;
+  padding: 80px;
 }
 
 .projects-title-section {
-  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
