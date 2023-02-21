@@ -18,10 +18,16 @@ function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  const options = {
+  const optionsHome = {
     root:  null,
     rootMargin: '0px',
     threshold: 0.95,
+  };
+
+  const optionsOtherPages = {
+    root:  null,
+    rootMargin: '0px',
+    threshold: 0.5,
   };
   
   const controlNavBar = (entries) => {
@@ -42,10 +48,10 @@ function App() {
   }
   
   // Lembrete: Pesquisar se existe uma maneira mais eficiente de fazer isso.
-  const home = new IntersectionObserver(controlNavBar, options);
-  const about = new IntersectionObserver(updateCurrentPage, options);
-  const projects = new IntersectionObserver(updateCurrentPage, options);
-  const contact = new IntersectionObserver(updateCurrentPage, options);
+  const home = new IntersectionObserver(controlNavBar, optionsHome);
+  const about = new IntersectionObserver(updateCurrentPage, optionsOtherPages);
+  const projects = new IntersectionObserver(updateCurrentPage, optionsOtherPages);
+  const contact = new IntersectionObserver(updateCurrentPage, optionsOtherPages);
 
   useEffect(() => {
     home.observe(homeRef.current);
