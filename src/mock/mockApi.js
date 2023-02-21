@@ -39,34 +39,34 @@ export const aboutMe = {
   timeLinePoints: [
     {
       id: 1,
-      title: 'Descobri minha paixão por desenvolvimento de softwares',
+      title: '❤️ | Descobri minha paixão por desenvolvimento de softwares',
       context: 'Precisei de um site para a minha empresa e descidi construir por conta própria',
       date: '2021/06',
     },
     {
       id: 2,
-      title: 'Decidi me dedicar totalmente aos estudos de programação',
+      title: '🎯 | Decidi me dedicar totalmente aos estudos de programação',
       context: 'Optei por fazer transição de carreira  e iniciei o curso de desenvolvimento web na Trybe para me tornar um profissional Full Stack',
       date: '2022/04',
     },
     {
       id: 3,
-      title: 'Me tornei bolsista do Google For Startups',
+      title: '🌐 | Me tornei bolsista do Google For Startups',
       context: 'Tive a grande oportunidade de participar de um processo setivo para ganhar um incentivo finaceiro do google, e assim continuar me dedicando a os estudos, e passei!',
       date: '2022/09',
     },
     {
       id: 4,
-      title: 'Me tornei um profissional Front End!',
+      title: '🎨 | Me tornei um profissional Front End!',
       context: 'Finalizei o segundo módulo da Trybe, ganhei a certificação e agora posso atuar no mercado como desenvolvedor front end',
       date: '2022/10',
     },
-    // {
-    //   id: 4,
-    //   title: 'Me tornei um profissional Front End!',
-    //   context: 'Finalizei o segundo módulo da Trybe, ganhei a certificação e agora posso atuar no mercado como desenvolvedor front end',
-    //   date: '2022/10',
-    // },
+    {
+      id: 5,
+      title: '🚀 | Conseguir meu primeiro estágio em tecnologia!',
+      context: 'Passei no processo seletivo da Trybe para estagiar como Student Summer Job de instrução',
+      date: '2023/01',
+    },
   ],
 }
 
