@@ -1,5 +1,4 @@
 .home-background {
-  position: absolute;
   background: linear-gradient(287.56deg,#000000 0%, #2e2e2e 100%);
   width: 100vw;
   height: 100vh;
@@ -68,7 +67,7 @@
   position: absolute;
   width: 170px;
   right: 0;
-  bottom: -6px;
+  bottom: -10px;
 }
 
 .home-hero {
