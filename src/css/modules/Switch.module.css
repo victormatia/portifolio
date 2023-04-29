@@ -1,0 +1,46 @@
+.switch {
+  font-size: 16px;
+  font-weight: 500; /*modificado*/
+  color: var(--white);
+  display: flex;
+  align-items: center;
+}
+
+.switch__background {
+  position: relative;
+  margin: 0 10px;
+  width: 36px;
+  height: 18px;
+  background: #3D3D3D;
+  border-radius: 100px;
+  padding: 2px;
+}
+
+.switch__trigger {
+  position: absolute;
+  border-radius:100%;
+  width: 14px;
+  height: 14px;
+}
+
+.switch__trigger:hover {
+  cursor: pointer;
+}
+
+.switch__p__enabled {
+  opacity: 1;
+}
+
+.switch__p__disabled{
+  opacity: 0.5;
+}
+
+.switch__trigger__pt-active {
+  background: linear-gradient(114.27deg, #13CF53 -40.92%, #F5E177 91.26%);
+  left: 2px;
+}
+
+.switch__trigger__en-active {
+  background: linear-gradient(114.27deg, var(--blue) -40.92%, var(--red) 91.26%);
+  right: 2px;
+}
