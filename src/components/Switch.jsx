@@ -1,27 +1,39 @@
-import React, { useState } from 'react'
-import '../css/Switch.css'
+import { useState } from 'react'
+import styles from '../css/modules/Switch.module.css'
 
 function Switch() {
   const [language, setLanguage] = useState(
-    { pt: 'ON', en: 'OFF', background: 'PT' },
+    {
+      pt: styles['switch__p__enabled'],
+      en: styles['switch__p__disabled'],
+      background: styles['switch__trigger__pt-active'],
+    },
   );
 
   return (
-    <section className='header-rigth-side FLEX__ROW__SPACE-BETWEEN__CENTER'>
-      <p className={`header-switch-label ${language.pt}`}>PT-BR</p>
+    <section className={ styles['switch'] }>
+      <p className={ language.pt }>PT-BR</p>
         <div
-          className='header-switch-background'
+          className={ styles['switch__background'] }
           onClick={ () => {
-            if (language.pt === 'ON') {
-              setLanguage({ pt: 'OFF', en: 'ON', background: 'EN' })
+            if (language.pt === styles['switch__p__enabled']) {
+              setLanguage({
+                 pt: styles['switch__p__disabled'],
+                 en: styles['switch__p__enabled'],
+                 background: styles['switch__trigger__en-active'],
+                })
             } else {
-              setLanguage({ pt: 'ON', en: 'OFF', background: 'PT' })
+              setLanguage({
+                pt: styles['switch__p__enabled'],
+                en: styles['switch__p__disabled'],
+                background: styles['switch__trigger__pt-active'],
+               })
             }
           } }
         >
-          <div className={`header-switch ${language.background}`}></div>
+          <div className={`${styles['switch__trigger']} ${ language.background }`}></div>
         </div>
-        <p className={`header-switch-label ${language.en}`}>EN</p>
+        <p className={ language.en }>EN</p>
     </section>
   )
 }
