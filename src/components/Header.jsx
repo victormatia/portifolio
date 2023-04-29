@@ -13,7 +13,9 @@ function Header() {
           <li><a href="#contact">contato</a></li>
         </ul>
       </section>
-      <Switch />
+      <section className={ styles['header__r-side'] }>
+        <Switch />
+      </section>
     </header>
   );
 }
