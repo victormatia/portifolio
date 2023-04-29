@@ -1,8 +1,9 @@
 .header {
   width: 60vw;
+  height: 50px;
   display: flex;
-  background-color: black;
   margin: 0 auto;
+  font-size: 16px;
   justify-content: space-between;
 }
 
@@ -35,4 +36,9 @@
 
 .header__links a:hover {
   opacity: 1;
+}
+
+.header__r-side {
+  display: flex;
+  align-items: center;
 }
