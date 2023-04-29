@@ -8,7 +8,7 @@ import { useRef, useEffect, useState } from 'react'
 import Contact from './pages/Contact'
 import { useContext } from 'react'
 import globalContext from './context/globalContext'
-import './css/index.css'
+import './css/Global.css';
 
 function App() {
   const [showNav, setShowNav] = useState(false);
