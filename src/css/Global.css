@@ -21,3 +21,7 @@ main {
   font-family: 'Jost*', sans-serif;                  
   color: var(--white);
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
