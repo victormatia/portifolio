@@ -1,15 +1,17 @@
 import React from 'react';
 import Timeline from '../components/Timeline';
 import { aboutMe } from "../mock/mockApi";
-import '../css/About.css';
+import styles from '../css/modules/About.module.css'
 
 function About() {
   const { about } = aboutMe;
   return (
-    <section className='about'>
-       <h1 className='about-title'>Sobre mim</h1>
-       <p className='about-description'>{ about }</p>
-       <Timeline />
+    <section className={ styles['about'] }>
+       <section className={ styles['about__content'] }>
+         <h1 className={ styles['about__title'] }>Sobre mim</h1>
+         <p className={ styles['about__paragraph'] }>{ about }</p>
+         <Timeline />
+       </section>
     </section>
   )
 }
