@@ -13,10 +13,10 @@ function Timeline() {
         }) => (
           <section key={id} className={ styles['timeline__point'] }>
             <section className={styles['timeline__content']}>
-              <time>{ date }</time>
               <h3 className={ styles['timeline__title'] }>{ title }</h3>
               <p className={ styles['timeline__context'] }>{ context }</p>
             </section>
+            <time  className={ styles['timeline__date'] }>{ date }</time>
             <div className={ styles['timeline__bulletpoint'] }></div>
           </section>
         ))

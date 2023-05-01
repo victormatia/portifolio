@@ -45,7 +45,7 @@
 }
 
 .timeline__title {
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .timeline__point:nth-child(even) .timeline__content {
@@ -70,6 +70,18 @@
   z-index: 1;
 }
 
+.timeline__date {
+  position: absolute;
+  top: 12px;
+  right: -100px;
+}
+
 .timeline__point:nth-child(even) .timeline__bulletpoint {
+  right: auto;
   left: -5.5px;
+}
+
+.timeline__point:nth-child(even) .timeline__date {
+  right: auto;
+  left: -100px;
 }
