@@ -24,6 +24,7 @@
   justify-content: flex-end;
   margin-bottom: 10px;
   position: relative;
+  transition: 0.5s;
 }
 
 .timeline__point:nth-child(even) {
@@ -72,7 +73,7 @@
 
 .timeline__date {
   position: absolute;
-  top: 12px;
+  top: 11px;
   right: -100px;
 }
 
@@ -84,4 +85,40 @@
 .timeline__point:nth-child(even) .timeline__date {
   right: auto;
   left: -100px;
+}
+
+@media screen and ( max-width: 850px ) {
+  .timeline::after {
+    left: 0;
+  }
+
+  .timeline__point {
+    padding-left: 100px;
+    padding-right: 0;
+    width: 100%;
+  }
+  
+  .timeline__point:nth-child(even) {
+    padding-right: 0;
+    padding-left: 100px;
+    align-self: flex-start;
+  }
+
+  .timeline__content {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .timeline__bulletpoint {
+    top: 16px;
+    left: -5.5px;
+  }
+
+  .timeline__date {
+    left: 20px;
+  }
+
+  .timeline__point:nth-child(even) .timeline__date {
+    left: 20px;
+  }
 }
