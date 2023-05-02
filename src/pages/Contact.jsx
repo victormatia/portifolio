@@ -33,7 +33,7 @@ function Contact () {
             <p>Email</p>
           </li>
         </ul>
-        <p>© Todos os direitos reservados | Um site desenvolvido por Victor Matias</p>
+        <p className={ styles['contact__credits'] }>© Todos os direitos reservados | Um site desenvolvido por Victor Matias</p>
       </section>
     </section>
   );
