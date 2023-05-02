@@ -93,12 +93,17 @@
 @media screen and (max-width:750px) {
   .contact__list {
     flex-direction: column;
-    width: 50%;
+    width: 90%;
     height: 50%;
     justify-content: space-evenly;
   }
 
   .contact__item {
     justify-content: center;
+    padding: 10px 0;
+  }
+
+  .contact__credits {
+    text-align: center;
   }
 }
