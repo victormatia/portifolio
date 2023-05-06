@@ -9,10 +9,10 @@ import Contact from './pages/Contact'
 import { useContext } from 'react'
 import globalContext from './context/globalContext'
 import './css/Global.css';
+import MobileHeader from './components/MobileHeader'
 
 function App() {
-  const [showNav, setShowNav] = useState(false);
-  const { setCurrentPage } = useContext(globalContext);
+  const { setCurrentPage, setShowBGHeader } = useContext(globalContext);
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -21,7 +21,7 @@ function App() {
   const optionsHome = {
     root:  null,
     rootMargin: '0px',
-    threshold: 0.95,
+    threshold: 1,
   };
 
   const optionsOtherPages = {
@@ -35,7 +35,7 @@ function App() {
     const isVisible = entrie.isIntersecting;
 
     setCurrentPage(entrie.target.id);
-    setShowNav(!isVisible)
+    setShowBGHeader(!isVisible)
   }
 
   const updateCurrentPage = (entries) => {
@@ -64,7 +64,8 @@ function App() {
   return (
     <main>
       <Header />
-      { showNav && <Navbar /> }
+      <MobileHeader />
+      {/* { showNav && <Navbar /> } */}
       <section ref={ homeRef } id='home' className='home-background'>
         <Home />
       </section>
