@@ -12,8 +12,8 @@
 }
 
 .m-header__bg {
-  /* backdrop-filter: blur(6px); */
-  background-color: #242424;
+  backdrop-filter: blur(6px);
+  background-color: #1b1b1be6;
 }
 
 .m-header__logo {
