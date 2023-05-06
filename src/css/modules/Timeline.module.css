@@ -115,6 +115,7 @@
   }
 
   .timeline__date {
+    right: 0;
     left: 20px;
   }
 
