@@ -3,10 +3,11 @@ import globalContext from "./globalContext";
 
 function Provider ({ children }) {
   const [currentPage, setCurrentPage] = useState('');
+  const [showBGHeader, setShowBGHeader] = useState(false);
 
   const context = {
-    currentPage,
-    setCurrentPage,
+    currentPage,setCurrentPage,
+    showBGHeader, setShowBGHeader
   }
 
   return (
