@@ -11,11 +11,11 @@
 .about__content {
   width: 80vw;
   max-width: 1000px;
+  margin: 60px 0;
 }
 
 .about__title {
   font-size: 3rem;
-  margin-top: 40px;
 }
 
 .about__paragraph {
