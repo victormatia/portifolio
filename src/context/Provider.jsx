@@ -4,10 +4,12 @@ import globalContext from "./globalContext";
 function Provider ({ children }) {
   const [currentPage, setCurrentPage] = useState('');
   const [showBGHeader, setShowBGHeader] = useState(false);
+  const [isNavBarActive, setIsNavBarActive] = useState(false);
 
   const context = {
     currentPage,setCurrentPage,
-    showBGHeader, setShowBGHeader
+    showBGHeader, setShowBGHeader,
+    isNavBarActive, setIsNavBarActive
   }
 
   return (
