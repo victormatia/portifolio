@@ -12,7 +12,7 @@ import './css/Global.css';
 import MobileHeader from './components/MobileHeader'
 
 function App() {
-  const { setCurrentPage, setShowBGHeader } = useContext(globalContext);
+  const { setCurrentPage, setShowBGHeader, isNavBarActive } = useContext(globalContext);
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -30,11 +30,10 @@ function App() {
     threshold: 0.5,
   };
   
-  const controlNavBar = (entries) => {
+  const controlBGNavBar = (entries) => {
     const [entrie] = entries;
     const isVisible = entrie.isIntersecting;
 
-    setCurrentPage(entrie.target.id);
     setShowBGHeader(!isVisible)
   }
 
@@ -48,7 +47,7 @@ function App() {
   }
   
   // Lembrete: Pesquisar se existe uma maneira mais eficiente de fazer isso.
-  const home = new IntersectionObserver(controlNavBar, optionsHome);
+  const home = new IntersectionObserver(controlBGNavBar, optionsHome);
   const about = new IntersectionObserver(updateCurrentPage, optionsOtherPages);
   const projects = new IntersectionObserver(updateCurrentPage, optionsOtherPages);
   const contact = new IntersectionObserver(updateCurrentPage, optionsOtherPages);
@@ -65,7 +64,7 @@ function App() {
     <main>
       <Header />
       <MobileHeader />
-      {/* { showNav && <Navbar /> } */}
+      { isNavBarActive && <Navbar /> }
       <section ref={ homeRef } id='home' className='home-background'>
         <Home />
       </section>
