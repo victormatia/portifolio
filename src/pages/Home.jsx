@@ -1,6 +1,5 @@
 import React from 'react'
 import hero from '../images/hero.png'
-import underlines from '../images/underlines.png'
 import arrow from '../images/arrow.png'
 import styles from '../css/modules/Home.module.css'
 
@@ -12,8 +11,8 @@ function Home() {
           <section className={ styles['home__l-side'] }>
             <h1 className={ styles['home__title'] }>Olá pessoas! ✌🏽</h1>
             <section className={ styles['home__paragraph'] }>
-              <p className='home-paragraph'>Eu sou Victor Matias, mas podem me chamar de Vitu, sou desenvolvedor front end. <br/>
-              Dito isso, sejam bem-vindos ao meu portifólio!</p>
+              <p className='home-paragraph'>Eu sou Victor Matias, mas podem me chamar de Vitu, sou desenvolvedor full stack e apaixonado por design. <br/>
+              Sejam bem-vindos ao meu portifólio!</p>
             </section>
           </section>
           <section className={ styles['home__r-side'] }>
