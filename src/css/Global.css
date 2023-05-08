@@ -5,6 +5,7 @@
   --white: #f1f1f1;
   --red: #E2525C;
   --blue: #1F8FE0;
+  --dark-gray : #373737;
 }
 
 * {
@@ -19,19 +20,9 @@ html {
 
 main {
   font-family: 'Jost*', sans-serif;                  
-  position: relative;
   color: var(--white);
 }
 
-*::-webkit-scrollbar { /*modificado*/
+*::-webkit-scrollbar {
   display: none;
-}
-
- /* classe de alinhamento */
- 
-.FLEX__ROW__SPACE-BETWEEN__CENTER {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }

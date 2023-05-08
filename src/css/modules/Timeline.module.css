@@ -1,0 +1,125 @@
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.timeline::after {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 0.5px);
+  height: 100%;
+  width: 1px;
+  background-color: rgb(86, 86, 86);
+  content: '';
+  z-index: 0;
+}
+
+.timeline__point {
+  padding-right: 25px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.timeline__point:nth-child(even) {
+  padding-right: 0;
+  padding-left: 25px;
+  align-self: flex-end;
+  justify-content: flex-start;
+}
+
+.timeline__content {
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  position: relative;
+}
+
+.timeline__title {
+  margin-bottom: 10px;
+}
+
+.timeline__point:nth-child(even) .timeline__content {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.timeline__content:hover {
+  background-color: #313131;
+  box-shadow: inset 41px 41px 82px #2a2a2a, inset -41px -41px 82px #383838;
+  scale: 1.05;
+}
+
+.timeline__bulletpoint {
+  width: 12px;
+  height: 12px;
+  background-color: var(--blue);
+  border-radius: 100%;
+  position: absolute;
+  top: 16px;
+  right: -5.5px;
+  z-index: 1;
+}
+
+.timeline__date {
+  position: absolute;
+  top: 11px;
+  right: -100px;
+}
+
+.timeline__point:nth-child(even) .timeline__bulletpoint {
+  right: auto;
+  left: -5.5px;
+}
+
+.timeline__point:nth-child(even) .timeline__date {
+  right: auto;
+  left: -100px;
+}
+
+@media screen and ( max-width: 850px ) {
+  .timeline::after {
+    left: 0;
+  }
+
+  .timeline__point {
+    padding-left: 100px;
+    padding-right: 0;
+    width: 100%;
+  }
+  
+  .timeline__point:nth-child(even) {
+    padding-right: 0;
+    padding-left: 100px;
+    align-self: flex-start;
+  }
+
+  .timeline__content {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .timeline__bulletpoint {
+    top: 16px;
+    left: -5.5px;
+  }
+
+  .timeline__date {
+    right: 0;
+    left: 20px;
+  }
+
+  .timeline__point:nth-child(even) .timeline__date {
+    left: 20px;
+  }
+}

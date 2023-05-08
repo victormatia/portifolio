@@ -4,8 +4,58 @@
   display: flex;
   align-items: center;
   bottom: 60px;
-  left: 20%;
+  left: 40px;
+  transition: 0.5s;
   animation: fade-in 0.5s;
+}
+
+.navbar__bg-home-icon {
+  background: linear-gradient(131.19deg, #1F8FE0 5.83%, #E2525C 100%);
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 4px 4px rgba(72, 72, 72, 0.25);
+}
+
+.navbar__home-icon {
+  width: 40px;
+  transition: 0.5s;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  height: 50px;
+  width: 280px;
+  margin-left: 10px;
+  border-radius: 100px 100px 100px 5px; /*Ainda não sei se vai ficar com essa borda diferente*/
+  background-color: var(--white);
+  box-shadow: 2px 4px 4px rgba(72, 72, 72, 0.25);
+  animation: slide-to-rigth 0.5s;
+}
+
+.navbar__links a {
+  color: #373737;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar__links a:hover {
+  opacity: 1;
+}
+
+.navbar__link__on {
+  opacity: 1;
+}
+
+.navbar__link__off {
+  opacity: 0.4;
 }
 
 @keyframes fade-in {
@@ -18,54 +68,26 @@
   }
 }
 
-.navbar-background-icon {
-  background: linear-gradient(131.19deg, #1F8FE0 5.83%, #E2525C 100%);
-  border-radius: 100%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 2px 4px 4px rgba(72, 72, 72, 0.25);
+@keyframes slide-to-rigth {
+  from {
+    opacity: 0;
+    width: 0;
+  } to {
+    opacity: 1;
+    width: 280px;
+  }
 }
 
-.navbar-icon {
-  width: 40px;
-  transition: 0.5s;
-}
+/* @media screen and ( max-width: 1520px) {
+  .navbar {
+    left: 5%;
+  }
+  
+} */
 
-.navbar-icon:hover {
-  rotate: 90deg;
-}
-
-
-
-.navbar-link-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
-  height: 50px;
-  width: 280px;
-  margin-left: 10px;
-  border-radius: 100px 100px 100px 5px; /*Ainda não sei se vai ficar com essa borda diferente*/
-  background-color: var(--white);
-  box-shadow: 2px 4px 4px rgba(72, 72, 72, 0.25);
-}
-
-.navbar-link {
-  color: #373737;
-  opacity: 0.4;
-  font-weight: 600;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-
-.navbar-link:hover {
-  opacity: 1;
-}
-
-.active {
-  opacity: 1 !important;
+@media screen and ( max-width: 850px ) {
+  .navbar {
+    display: none;
+  }
+  
 }

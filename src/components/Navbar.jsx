@@ -4,47 +4,58 @@ import { useContext } from 'react';
 import globalContext from '../context/globalContext';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import '../css/Navbar.css'
+import styles from '../css/modules/Navbar.module.css'
 
 function Navbar() {
   const { currentPage } = useContext(globalContext);
+  const [showMenu, setShowMenu] = useState(false)
   const [pageActive, setPageActive] = useState({
-    isAbout: '',
-    isProjects: '',
-    isContact: '',
+    isAbout: styles['navbar__link__off'],
+    isProjects: styles['navbar__link__off'],
+    isContact: styles['navbar__link__off'],
   });
 
   useEffect(() => {
-
     if(currentPage === 'about') setPageActive({
-      isAbout: 'active',
-      isProjects: '',
-      isContact: '',
+      isAbout: styles['navbar__link__on'],
+      isProjects: styles['navbar__link__off'],
+      isContact: styles['navbar__link__off'],
     });
 
     if(currentPage === 'projects') setPageActive({
-      isAbout: '',
-      isProjects: 'active',
-      isContact: '',
+      isAbout: styles['navbar__link__off'],
+      isProjects: styles['navbar__link__on'],
+      isContact: styles['navbar__link__off'],
     });
 
     if(currentPage === 'contact') setPageActive({
-      isAbout: '',
-      isProjects: '',
-      isContact: 'active',
+      isAbout: styles['navbar__link__off'],
+      isProjects: styles['navbar__link__off'],
+      isContact: styles['navbar__link__on'],
     });
 
   }, [currentPage]);
 
   return (
-    <nav className='navbar'>
-      <div className='navbar-background-icon'><img  className="navbar-icon" src={ navbarIcon } alt="icone da barra de navegação" /></div>
-      <ul className='navbar-link-list'>
-      <li><a className='navbar-link' href="#home">home</a></li>
-      <li><a className={ `navbar-link ${pageActive.isAbout}` } href="#about">sobre</a></li>
-      <li><a className={ `navbar-link ${pageActive.isProjects}` }href="#projects">projetos</a></li>
-      <li><a className={ `navbar-link ${pageActive.isContact}` } href="#contact">contato</a></li>
-      </ul>
+    <nav
+      className={ styles['navbar'] }
+      onMouseEnter={() => setShowMenu(true)}
+      onMouseLeave={() => setShowMenu(false)}
+    >
+      <div className={ styles['navbar__bg-home-icon'] }>
+        <a href="#home">
+          <img  className={ styles['navbar__home-icon'] } src={ navbarIcon } alt="icone da barra de navegação" />
+        </a>
+      </div>
+      {
+        showMenu  && (
+          <ul className={ styles['navbar__links'] }>
+            <li><a className={ `navbar-link ${pageActive.isAbout}` } href="#about">sobre</a></li>
+            <li><a className={ `navbar-link ${pageActive.isProjects}` }href="#projects">projetos</a></li>
+            <li><a className={ `navbar-link ${pageActive.isContact}` } href="#contact">contato</a></li>
+          </ul>
+        )
+      }
     </nav>
   )
 }

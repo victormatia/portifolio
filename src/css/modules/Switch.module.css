@@ -1,10 +1,12 @@
-.header-switch-label {
-  font-size: 18px;
-  font-weight: 600; /*modificado*/
+.switch {
+  font-size: 16px;
+  font-weight: 500; /*modificado*/
   color: var(--white);
+  display: flex;
+  align-items: center;
 }
 
-.header-switch-background {
+.switch__background {
   position: relative;
   margin: 0 10px;
   width: 36px;
@@ -14,33 +16,31 @@
   padding: 2px;
 }
 
-.header-switch {
+.switch__trigger {
   position: absolute;
   border-radius:100%;
   width: 14px;
   height: 14px;
 }
 
-.header-switch-background:hover {
+.switch__trigger:hover {
   cursor: pointer;
 }
 
-.ON{
-  /* font-weight: 600; */
-  opacity: 1; /*modificado*/
+.switch__p__enabled {
+  opacity: 1;
 }
 
-.OFF{
-  /* font-weight: 400; */
-  opacity: 0.5; /*modificado*/
+.switch__p__disabled{
+  opacity: 0.5;
 }
 
-.PT {
+.switch__trigger__pt-active {
   background: linear-gradient(114.27deg, #13CF53 -40.92%, #F5E177 91.26%);
   left: 2px;
 }
 
-.EN {
+.switch__trigger__en-active {
   background: linear-gradient(114.27deg, var(--blue) -40.92%, var(--red) 91.26%);
   right: 2px;
 }
