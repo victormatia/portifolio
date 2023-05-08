@@ -71,7 +71,7 @@ export const aboutMe = {
       id: 6,
       title: '👨🏼‍💻 | Me tornei um profissional Full Stack!',
       context: 'Finalizei o tercéiro módulo da Trybe e, após conquistar 100% de aprovação em todos os projetos avaliativos, ganhei a certificação de profissional Back end.',
-      date: '2022/10',
+      date: '2023/03',
     },
   ],
 }
