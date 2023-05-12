@@ -1,5 +1,8 @@
 {
   "translation": {
+    "headerMenuItenAbout": "about",
+    "headerMenuItenProjects": "projects",
+    "headerMenuItenContact": "contact",
     "homeTitle": "Hello people! ✌🏽",
     "homePragraphPT1": "I'm Victor Matias, but you can call me Vitu, I'm a full stack developer and passionate about design.",
     "homePragraphPT2": "Welcome to my portfolio!"
