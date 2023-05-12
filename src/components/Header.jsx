@@ -3,10 +3,12 @@ import styles from '../css/modules/Header.module.css'
 import Switch from '../components/Switch';
 import { useContext, useEffect, useRef } from 'react';
 import globalContext from '../context/globalContext';
+import { useTranslation } from 'react-i18next';
 
 function Header() {
   const { setIsNavBarActive } = useContext(globalContext)
   const headerRef = useRef(null);
+  const { t } = useTranslation()
 
   const options = {
     root:  null,
@@ -29,9 +31,9 @@ function Header() {
       <section className={ styles['header__l-side'] }>
         <img className={ styles['header__logo'] } src={ logo } alt="VITU logo" />
         <ul className={ styles['header__links'] }>
-          <li><a href="#about">sobre</a></li>
-          <li><a href="#projects">projetos</a></li>
-          <li><a href="#contact">contato</a></li>
+          <li><a href="#about">{t('headerMenuItenAbout')}</a></li>
+          <li><a href="#projects">{t('headerMenuItenProjects')}</a></li>
+          <li><a href="#contact">{t('headerMenuItenContact')}</a></li>
         </ul>
       </section>
       <section className={ styles['header__r-side'] }>
