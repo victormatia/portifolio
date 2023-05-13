@@ -5,6 +5,8 @@
     "headerMenuItenContact": "contact",
     "homeTitle": "Hello people! ✌🏽",
     "homePragraphPT1": "I'm Victor Matias, but you can call me Vitu, I'm a full stack developer and passionate about design.",
-    "homePragraphPT2": "Welcome to my portfolio!"
+    "homePragraphPT2": "Welcome to my portfolio!",
+    "aboutTitle": "About me",
+    "aboutParagraph": "A little more about me. I'm 24 years old and I'm from Ceará. A while ago, I discovered my passion for software development and on April 20, 2022, I decided to jump into this world and become a dev. Currently, I'm a full stack professional certified by Trybe, however, I'm still specializing, and I've been studying python as my second programming language. That said, I separated some important moments of my career in the following timeline:"
   }
 }
