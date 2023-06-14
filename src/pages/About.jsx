@@ -1,12 +1,11 @@
 import React from 'react';
 import Timeline from '../components/Timeline';
-import { aboutMe } from "../mock/mockApi";
 import styles from '../css/modules/About.module.css'
 import { useTranslation } from 'react-i18next';
 
 function About() {
   const { t } = useTranslation();
-  const { about } = aboutMe;
+
   return (
     <section className={ styles['about'] }>
        <section className={ styles['about__content'] }>
