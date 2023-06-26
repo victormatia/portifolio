@@ -27,6 +27,8 @@
     "timeLineP6Context": "I finished the third Trybe module and, after achieving 100% approval in all the evaluative projects, I was certified as a Back end professional.",
     "timeLineP6Date": "2023/03",
     "projectsTitle": "Projects",
-    "projectsParagraph": "Here are some projects that, during my journey as a developer, I am proud to have done or participated in"
+    "projectsParagraph": "Here are some projects that, during my journey as a developer, I am proud to have done or participated in",
+    "projectRepButton": "Repository",
+    "projectDeployButton": "Application"
   }
 }
