@@ -29,6 +29,8 @@
     "projectsTitle": "Projetos",
     "projectsParagraph": "Aqui estão alguns projetos que, durante minha jornada como desenvolvedor, me orgulho de ter feito ou participado",
     "projectRepButton": "Reposítorio",
-    "projectDeployButton": "Aplicação"
+    "projectDeployButton": "Aplicação",
+    "contactTitle": "Contato",
+    "contactCredits": "© Todos os direitos reservados | Um site desenvolvido por Victor Matias"
   }
 }
