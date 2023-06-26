@@ -27,6 +27,8 @@
     "timeLineP6Context": "Finalizei o tercéiro módulo da Trybe e, após conquistar 100% de aprovação em todos os projetos avaliativos, ganhei a certificação de profissional Back end.",
     "timeLineP6Date": "03/2023",
     "projectsTitle": "Projetos",
-    "projectsParagraph": "Aqui estão alguns projetos que, durante minha jornada como desenvolvedor, me orgulho de ter feito ou participado"
+    "projectsParagraph": "Aqui estão alguns projetos que, durante minha jornada como desenvolvedor, me orgulho de ter feito ou participado",
+    "projectRepButton": "Reposítorio",
+    "projectDeployButton": "Aplicação"
   }
 }
