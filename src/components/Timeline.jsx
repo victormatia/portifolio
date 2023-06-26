@@ -1,10 +1,11 @@
-import React from 'react';
-import { aboutMe } from "../mock/mockApi";
+import React, { useContext, useMemo } from 'react';
 import styles from '../css/modules/Timeline.module.css'
+import globalContext from '../context/globalContext';
 
 
 function Timeline() {
-  const { timeLinePoints } = aboutMe;
+  const { timeLinePoints } = useContext(globalContext);
+  
   return (
     <section className={ styles['timeline'] }>
       {
