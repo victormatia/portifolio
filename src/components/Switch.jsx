@@ -25,7 +25,7 @@ function Switch() {
   };
 
   return (
-    <section className={ styles['switch'] }  title='Funcionalidade Indisponível'>
+    <section className={ styles['switch'] }>
       <p className={ language.pt }>PT-BR</p>
       <div
         className={ styles['switch__background'] }
