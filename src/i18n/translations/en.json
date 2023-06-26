@@ -29,6 +29,8 @@
     "projectsTitle": "Projects",
     "projectsParagraph": "Here are some projects that, during my journey as a developer, I am proud to have done or participated in",
     "projectRepButton": "Repository",
-    "projectDeployButton": "Application"
+    "projectDeployButton": "Application",
+    "contactTitle": "Contact",
+    "contactCredits": "© All rights reserved | A website developed by Victor Matias"
   }
 }
