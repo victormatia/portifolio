@@ -1,6 +1,6 @@
 import repicesThumb from './thumbs/recipes-thumb.png';
 import ualletThumb from './thumbs/uallet-thumb.png';
-import tunesThumb from './thumbs/tunes-thumb.png';
+import botThumb from './thumbs/bot-thumb.png';
 import blogsThumb from './thumbs/blogs-thumb.png';
 
 export const projects = [
@@ -26,10 +26,10 @@ export const projects = [
     link: '',
   },
   {
-    name: 'Trybe Tunes',
-    tag: 'Em breve',
-    thumb: tunesThumb,
-    repo: '',
+    name: 'WhatsApp ChatBot',
+    tag: 'Script',
+    thumb: botThumb,
+    repo: 'https://github.com/victormatia/wpp-bot',
     link: '',
   },
 ];
