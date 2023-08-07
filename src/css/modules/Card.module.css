@@ -52,6 +52,18 @@
   border: 1px solid var(--dark-gray);
 }
 
+.card__links-active {
+  cursor: pointer;
+}
+
+.card__links-disabled {
+  cursor: not-allowed;
+}
+
+.card__links-disabled p, .card__links-disabled svg {
+  opacity: 0.5;
+}
+
 .card__links svg {
   margin-right: 5px;
   font-size: 1.2rem;
