@@ -5,6 +5,12 @@ import { HiRocketLaunch } from 'react-icons/hi2'
 
 function Card({ projectInfos: { name, tag, thumb, repo, link } }) {
   const { t } = useTranslation();
+  
+  const isValidLink = (link) => {
+    return !link ? styles['card__links-disabled']
+      : styles['card__links-active'];
+  };
+
   return (
     <li className={ styles['card'] }>
       <img className={ styles['card__image'] } src={ thumb } alt="miniatura do projeto" />
@@ -12,11 +18,11 @@ function Card({ projectInfos: { name, tag, thumb, repo, link } }) {
       <p className={ styles['card__tag'] }>{ tag }</p>
       <section className={ styles['card__links'] }>
         <a href={ repo } target="_blank">
-          <DiGithubBadge className={ styles['card__icon'] }  />
+          <DiGithubBadge />
           <p>{ t('projectRepButton') }</p>
         </a>
-        <a href={ link } target="_blank">
-          <HiRocketLaunch className={ styles['card__icon'] } />
+        <a className={ isValidLink(link) } href={ link } target="_blank">
+          <HiRocketLaunch />
           <p>{ t('projectDeployButton') }</p>
         </a>
       </section>
