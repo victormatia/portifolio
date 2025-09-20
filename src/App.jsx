@@ -3,13 +3,13 @@ import Header from './components/Header'
 import Navbar from './components/Navbar'
 import About from './pages/About'
 import Home from './pages/Home'
-import Projects from './pages/Projects'
 import { useRef, useEffect, useState } from 'react'
 import Contact from './pages/Contact'
 import { useContext } from 'react'
 import globalContext from './context/globalContext'
 import './css/Global.css';
 import MobileHeader from './components/MobileHeader'
+import Projects from './pages/Projects'
 
 function App() {
   const { setCurrentPage, setShowBGHeader, isNavBarActive } = useContext(globalContext);
