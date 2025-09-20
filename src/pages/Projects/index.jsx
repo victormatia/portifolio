@@ -1,7 +1,7 @@
-import React from "react";
-import Card from "../components/Card";
-import { projects } from "../mock/mockApi";
-import styles from '../css/modules/Projects.module.css'
+// import React from "react";
+// import Card from "../components/Card";
+// import { projects } from "../mock/mockApi";
+import styles from './style.module.css';
 import { useTranslation } from "react-i18next";
 
 function Projects () {
@@ -11,11 +11,14 @@ function Projects () {
       <section className={ styles['projects__content'] }>
         <h1 className={ styles['projects__title'] }>{ t('projectsTitle') }</h1>
         <p className={ styles['projects__paragraph'] }>{ t('projectsParagraph') }</p>
-        <ul className={ styles['projects__list'] }>
+        <div className={ styles['manutention'] }>
+          <p>Em manutenção (Em breve novos projetos)</p>
+        </div>
+        {/* <ul className={ styles['projects__list'] }>
           { projects.map(({ name, tag, thumb, repo, link }, i) => (
             <Card projectInfos={{ name, tag, thumb, repo, link }}  key={ i }/>
             )) }
-        </ul>
+        </ul> */}
       </section>
     </section>
   )

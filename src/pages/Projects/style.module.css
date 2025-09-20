@@ -55,6 +55,19 @@
   column-gap: 10px;
 }
 
+.manutention {
+  width: 100%;
+  padding: 16px;
+  border: 1px black solid;
+  border-radius: 4px;
+  margin-top: 48px;
+}
+
+.manutention p {
+  text-align: center;
+  color: #404040;
+}
+
 @media screen and ( max-width: 1500px ) {
   .projects__paragraph {
     width: 100%;
